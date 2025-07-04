@@ -3,9 +3,8 @@ import { Fragment, useState } from "react";
 import { nanoid } from "nanoid";
 import ReadRow from "./ReadRow";
 import EditRow from "./EditRow";
-import { setItem } from "../../utils/localstorage";
+import { setItem } from "../../utils/localStorage";
 import usePersistedState from "../../hooks/usePersistedState";
-import "./EventTable.css"
 
 //Using a table I will display the event details.//
 // table complete added localstorage to store data. reference https://medium.com/@roman_j/mastering-state-persistence-with-local-storage-in-react-a-complete-guide-1cf3f56ab15c//

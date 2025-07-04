@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
-import EventTable from "./event components/EventTable";
-import ShareButton from "./ShareButton";
+import EventTable from "../event component/EventTable";
+import ShareButton from './ShareButton'
 
 const Dashboard = () => {
 
