@@ -33,7 +33,7 @@ function Login () {
     return (
         <div className= "wrapper">
             <div className="login-box">
-                <div>
+                <div className="login-header">
                     <span>Login</span>
                 </div>
                <div className="input-box">

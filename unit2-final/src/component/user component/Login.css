@@ -11,14 +11,16 @@
     min-height: 100vh;
     background-color: (0, 0, 0, 0.2);
 }
-#login-form{
+.login-box{
     position: relative;
     width: 450px;
-    border: 2px solid;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border: 2px solid #c6c3c3;
     border-radius: 15px;
-    padding: 7em 3em 4em;
+    padding: 7em 3em 4em 3em;
     color: white;
-    box-shadow: 0px 0px (0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 2px (0, 0, 0, 0.3);
 }
 .login-header{
     position: absolute;
@@ -36,4 +38,32 @@
 .login-header span{
     font-size: 30px;
     color: black;
+}
+.login-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 #c6c3c3;
+}
+.login-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 #c6c3c3;
+}
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
 }
