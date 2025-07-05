@@ -11,7 +11,6 @@ const Home = () =>{
 
     return (
         <div className="home">
-            <h1>Welcome to CalSync!</h1>
             <button type="button" onClick={handleClick1}>Login</button>
             <button type="button" onClick={handleClick2}>Register Account</button>
         </div>

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
-// import { useEffect } from "react"; 
+// import { useEffect } from "react";
+import './Login.css'
 
 function Login () {
     
@@ -30,14 +31,20 @@ function Login () {
     };
 
     return (
-        <div>
-            <h1>Login</h1> 
-            <form id="login-form" onSubmit={handleSubmit}>
-                <input type="email" placeholder="Enter Email"/>
-                <input type="password" placeholder="Enter Password"/>
-                <button type="submit">Submit</button><br></br>
-                <button type="button" onClick={handleClick}>Register</button>
-            </form>
+        <div className= "wrapper">
+            <div className="login-box">
+                <div>
+                    <span>Login</span>
+                </div>
+               <div className="input-box">
+                    <form id="login-form" onSubmit={handleSubmit}>
+                        <input type="email" placeholder="Enter Email"/>
+                        <input type="password" placeholder="Enter Password"/>
+                        <button type="submit">Submit</button><br></br>
+                        <button type="button" onClick={handleClick}>Register</button>
+                    </form>
+               </div>
+            </div>
         </div>
     );
 };

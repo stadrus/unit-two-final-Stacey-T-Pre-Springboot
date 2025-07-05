@@ -9,7 +9,6 @@ import Login from './component/user component/Login'
 import Dashboard from './component/user component/Dashboard'
 import EventTable from './component/event component/EventTable'
 
-
 function App() {
  
   return (
@@ -18,8 +17,8 @@ function App() {
       <div>
         <Header />
       </div>
-      <p className="welcom-to-app">
-        Welcome to SocCalSync
+      <p className="welcome-to-app">
+        Welcome to SocCalSync!
       </p>
       <div>
         <Routes>
