@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./about.css"
 
 const About = () =>{
 
@@ -20,13 +21,12 @@ const About = () =>{
     }
 
     return(
-        <div className="about">
-            <p>Welcome to Kinsync.</p>
-            <p>This app was created to make family planning easier, safer, and more reliable. </p>
+        <div className="wrapper">
+            <p className="app-bio">This app was created to make family planning easier, safer, and more reliable. </p>
             <div>
-                <h1>User Feedback Form</h1>
-                <form>
-                    <label>
+                <form className="login-box">
+                <h1 className="feedback-header">User Feedback Form</h1>
+                    <label className="input-box">
                         Name:
                         <input
                         type="text" 
@@ -35,7 +35,7 @@ const About = () =>{
                         placeholder="Enter Your Name"
                         onChange= {handleFormData} />
                     </label><br />
-                    <label>
+                    <label className="input-box">
                         Email:
                         <input 
                         type="text" 
@@ -44,7 +44,7 @@ const About = () =>{
                         placeholder="Enter Your Email"
                         onChange= {handleFormData} />
                     </label><br />
-                    <label>
+                    <label className="input-box">
                         Feedback:
                         <textarea name="feedback"
                         value= {formData.feedback}
@@ -54,7 +54,7 @@ const About = () =>{
                         />
                         <p className = "counter"> {formData.feedback.length}/200 Characters</p>
                     </label>
-                    <button type="submit">Submit</button>
+                    <button className="submit-button" type="submit">Submit</button>
                 </form>
     
             </div>
