@@ -36,12 +36,12 @@ function Login () {
                 <div className="login-header">
                     <span>Login</span>
                 </div>
-               <div className="input-box">
+               <div>
                     <form id="login-form" onSubmit={handleSubmit}>
-                        <input type="email" placeholder="Enter Email"/>
-                        <input type="password" placeholder="Enter Password"/>
-                        <button type="submit">Submit</button><br></br>
-                        <button type="button" onClick={handleClick}>Register</button>
+                        <input className="input-box" type="email" placeholder="Enter Email"/>
+                        <input className="input-box" type="password" placeholder="Enter Password"/>
+                        <button className="submit-button" type="submit">Submit</button><br></br>
+                        <button className="register-button" type="button" onClick={handleClick}>Register</button>
                     </form>
                </div>
             </div>

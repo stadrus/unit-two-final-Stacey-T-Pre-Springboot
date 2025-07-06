@@ -16,7 +16,7 @@
     width: 450px;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
-    border: 2px solid #c6c3c3;
+    border: 2px solid #1e1930;
     border-radius: 15px;
     padding: 7em 3em 4em 3em;
     color: white;
@@ -29,7 +29,7 @@
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    background-color: #c6c3c3;
+    background-color: #1e1930;
     width: 140px;
     height: 70px;
     border-radius: 0 0 20px 20px;
@@ -37,7 +37,7 @@
 }
 .login-header span{
     font-size: 30px;
-    color: black;
+    color: white;
 }
 .login-header::after{
     content: "";
@@ -48,7 +48,7 @@
     height: 30px;
     border-top-left-radius: 50%;
     background: transparent;
-    box-shadow: -15px 0 0 0 #c6c3c3;
+    box-shadow: -15px 0 0 0 #1e1930;
 }
 .login-header::before{
     content: "";
@@ -59,11 +59,62 @@
     height: 30px;
     border-top-right-radius: 50%;
     background: transparent;
-    box-shadow: 15px 0 0 0 #c6c3c3;
+    box-shadow: 15px 0 0 0 #1e1930;
 }
 .input-box{
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+}
+.input-box{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    padding-inline: 20px 50px ;
+    border-radius: 2px solid #1e1930;
+    border-radius: 30px;
+    outline: none;
+}
+.submit-button{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-button{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-button{
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
 }

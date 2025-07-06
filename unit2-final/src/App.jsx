@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
 import './App.css'
-import Header from './component/Header'
-import Footer from './component/Footer'
-import Home from './component/Home'
-import About from './component/About'
+import Header from './component/page component/Header'
+import Footer from './component/page component/Footer'
+import Home from './component/page component/Home'
+import About from './component/page component/About'
 import Register from './component/user component/Register'
 import Login from './component/user component/Login'
 import Dashboard from './component/user component/Dashboard'
@@ -17,11 +17,9 @@ function App() {
       <div>
         <Header />
       </div>
-      <p className="welcome-to-app">
-        Welcome to SocCalSync!
-      </p>
       <div>
         <Routes>
+          <Route path ='/' element={<Home />}/>
           <Route path ='/Home' element={<Home />}/>
           <Route path ='/About' element={<About />}/>
           <Route path='/Register' element={<Register />}/>
