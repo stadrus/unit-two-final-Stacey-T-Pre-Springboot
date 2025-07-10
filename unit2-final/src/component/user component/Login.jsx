@@ -34,7 +34,7 @@ function Login () {
         <div className= "wrapper">
             <div className="login-box">
                 <div className="login-header">
-                    <span>Login</span>
+                    <h3 className="login-title">Login</h3>
                 </div>
                <div>
                     <form id="login-form" onSubmit={handleSubmit}>

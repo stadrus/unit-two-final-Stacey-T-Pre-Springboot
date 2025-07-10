@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import logo from "../../images/logo.svg"
+import "./header.css"
+
 
 const Header = () => {
     return (

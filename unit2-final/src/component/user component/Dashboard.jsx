@@ -15,7 +15,9 @@ const Dashboard = () => {
                 <button type='button' id="Logout" name="Logout" onClick={handleLogoutClick}>Logout</button>
             </header>
             <EventTable />
-            <ShareButton></ShareButton>
+            <div className="share-button">
+                <ShareButton />
+                </div>
         </div>
     )
 };
