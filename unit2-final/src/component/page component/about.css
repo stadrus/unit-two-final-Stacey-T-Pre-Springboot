@@ -34,8 +34,11 @@ form{
 }
 .feedback-header{
     font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
     color: white;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .feedback-header::after{
     content: "";
@@ -59,3 +62,25 @@ form{
     background: transparent;
     box-shadow: 15px 0 0 0 #1e1930;
 }
+.feedback-input{
+    width: 100%;
+    padding: 30px 20px;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: transparent;   
+    color: white;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}.feedback-input::placeholder{
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}   

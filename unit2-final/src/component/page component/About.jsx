@@ -25,28 +25,28 @@ const About = () =>{
             <p className="app-bio">This app was created to make family planning easier, safer, and more reliable. </p>
             <div>
                 <form className="login-box">
-                <h1 className="feedback-header">User Feedback Form</h1>
-                    <label className="input-box">
+                <h1 className="feedback-header">Feedback Form</h1>
+                    <label >
                         Name:
-                        <input
+                        <input className="input-box"
                         type="text" 
                         name="name"
                         value= {formData.name} 
                         placeholder="Enter Your Name"
                         onChange= {handleFormData} />
                     </label><br />
-                    <label className="input-box">
+                    <label >
                         Email:
-                        <input 
+                        <input className="input-box"
                         type="text" 
                         name="email"
                         value= {formData.email}
                         placeholder="Enter Your Email"
                         onChange= {handleFormData} />
                     </label><br />
-                    <label className="input-box">
+                    <label>
                         Feedback:
-                        <textarea name="feedback"
+                        <textarea className="feedback-input" name="feedback"
                         value= {formData.feedback}
                         placeholder="Please provide your feedback(max 200 Characters"
                         onChange= {handleFormData} rows="5" cols="33" 
