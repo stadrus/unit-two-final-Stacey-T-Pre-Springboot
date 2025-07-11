@@ -83,10 +83,9 @@
     font-weight: 500;
     letter-spacing: 1px;
     border: none;
-    outline: none;
     background: transparent;
     color: white;
-    padding-inline: 50px;
+    padding-inline: 20px 50px ;
     border-radius: 2px solid #1e1930;
     border-radius: 30px;
     outline: none;
