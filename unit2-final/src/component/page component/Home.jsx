@@ -14,7 +14,7 @@ const Home = () =>{
         
         <div className="home">
         <div className="background-container">
-          <span></span>
+          <span> </span>
           <span></span>
           <span></span>
           <span></span>
@@ -25,14 +25,16 @@ const Home = () =>{
           <span></span>
           <span></span>
         </div>
-        <div>
+        <div className="home-header">
             <h3>The social calendar</h3>
         </div>
-        <div >
+        <div className="home-content">
+        <div className="home-container">
             <button className="login-button" type="button" onClick={handleClick1}>Login</button>
         </div>
         <div >
             <button className="register-button" type="button" onClick={handleClick2}>Register Account</button>
+        </div>
         </div>
         </div>
     );
