@@ -12,6 +12,17 @@
     padding: 20px;
     position: relative;
 }
+.home-logo{
+    width: 550px;
+    height: 550px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.home-logo:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    animation: forwards bounce 1s;
+}
   .home h3{
     color: #1e1932;
     font-size: 20px;

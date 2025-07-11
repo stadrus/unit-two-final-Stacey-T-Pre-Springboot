@@ -31,17 +31,19 @@ function Login () {
     };
 
     return (
-        <div className= "wrapper">
+        <div className= "login-wrapper">
             <div className="login-box">
                 <div className="login-header">
                     <h3 className="login-title">Login</h3>
                 </div>
                <div>
                     <form id="login-form" onSubmit={handleSubmit}>
+                    <div>
                         <input className="input-box" type="email" placeholder="Enter Email"/>
                         <input className="input-box" type="password" placeholder="Enter Password"/>
                         <button className="submit-button" type="submit">Submit</button><br></br>
                         <button className="register-button" type="button" onClick={handleClick}>Register</button>
+                    </div>
                     </form>
                </div>
             </div>

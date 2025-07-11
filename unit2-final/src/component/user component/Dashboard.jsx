@@ -19,7 +19,7 @@ const Dashboard = () => {
             <section className="dashboard-hero">
                 <h1 className="dashboard-header">Welcome to your Dashboard</h1>
             </section>
-            <article className="dashboard-info">
+            <article className="dashboard-events">
             <EventTable />
             </article>
             <div className="sharebutton-wrapper">

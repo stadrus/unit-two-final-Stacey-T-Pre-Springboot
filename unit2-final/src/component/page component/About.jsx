@@ -21,11 +21,12 @@ const About = () =>{
     }
 
     return(
-        <div className="wrapper">
+        <div className="about-wrapper">
             <p className="app-bio">This app was created to make family planning easier, safer, and more reliable. </p>
             <div>
-                <form className="login-box">
+                <form className="feedback-box">
                 <h1 className="feedback-header">Feedback Form</h1>
+                <div>
                     <label >
                         Name:
                         <input className="input-box"
@@ -55,6 +56,7 @@ const About = () =>{
                         <p className = "counter"> {formData.feedback.length}/200 Characters</p>
                     </label>
                     <button className="submit-button" type="submit">Submit</button>
+                </div>
                 </form>
     
             </div>

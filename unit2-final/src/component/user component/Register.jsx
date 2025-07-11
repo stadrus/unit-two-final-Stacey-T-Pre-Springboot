@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router';
 import { useEffect, useState } from 'react';
+import './Register.css';
 
 
 function Register () {
@@ -62,14 +63,20 @@ function Register () {
         navigate('/Login');
     }
     return (
-        <div>
-            <h1>Register Today!</h1>
-            <form id="register-form" onSubmit={handleSubmit}>
-                <input id="name-user" placeholder='Enter Name' type="text" value={name} onChange={handleName}/><br></br>
-                <input id="email" placeholder='Enter Email' type="email"  value={email} onChange= {handleEmail}/><br></br>
-                <input id="current-password" placeholder="Enter Password" type="password" value={password} onChange={handlePassword}/><br></br>
-                <button type="submit">Submit</button>
-            </form>   
+        <div className='register-wrapper'>
+            <div className='register-box'>
+                <div className="register-header">
+                    <h1 className='register-title'>Register</h1>
+                </div>
+                <form id="register-form" onSubmit={handleSubmit}>
+                <div>
+                        <input className="input-box" id="name-user" placeholder='Enter Name' type="text" value={name} onChange={handleName}/><br></br>
+                        <input className="input-box" id="email" placeholder='Enter Email' type="email"  value={email} onChange= {handleEmail}/><br></br>
+                        <input className="input-box" id="current-password" placeholder="Enter Password" type="password" value={password} onChange={handlePassword}/><br></br>
+                        <button className="submit-button" type="submit">Submit</button>
+                </div>
+                    </form>   
+            </div>
         </div>
     );
 };
